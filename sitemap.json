@@ -1,7 +1,7 @@
 {
   "desc": "关于本文件的更多信息，请参考文档 https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html",
   "rules": [{
-  "action": "allow",
-  "page": "*"
+  "action": "allow",//表示这个小程序可以被微信的爬虫搜索引擎查询关键字
+  "page": "*"//表示所有的页面均可以被搜索
   }]
 }

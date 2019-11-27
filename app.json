@@ -1,6 +1,40 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/music/music",
+    "pages/mine/mine",
+    "pages/profile/profile",
     "pages/about/about"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#435689",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "bandari的小程序",
+    "backgroundColor": "#DDDAAD",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabBar-icon/shouye.png",
+        "selectedIconPath": "assets/tabBar-icon/shouye_active.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "assets/tabBar-icon/yinle.png",
+        "selectedIconPath": "assets/tabBar-icon/yinle_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人",
+        "iconPath": "assets/tabBar-icon/wode.png",
+        "selectedIconPath": "assets/tabBar-icon/wode_active.png"
+      }
+    ],
+    "selectedColor": "#1296DB"
+  }
 }
