@@ -3,7 +3,19 @@
 <!-- 1.小程序的数据绑定 Mustache语法-->
 <view>Hellow {{name}}</view>
 <view>年龄 :{{age}}</view>
+
 <!-- 2.列表展示 -->
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
+<view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
 <view wx:for='{{students}}' wx:key='item'>{{item.name}}--{{item.age}}</view>
 <!-- 3.事件监听改变data 计数器的实现-->
 <view>当前计数：{{counter}}</view>

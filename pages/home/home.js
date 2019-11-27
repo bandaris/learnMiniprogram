@@ -36,5 +36,32 @@ Page({
     this.setData({
       counter: this.data.counter - 1
     })
+  },
+  onLoad(){
+
+  },
+  onShow(){
+
+  },
+  onReady(){
+
+  },
+  onHide(){
+
+  },
+  onUnload(){
+
+  },
+  //其他的页面监听
+  //1.监听页面的滚动 obj是传入的滚动信息的对象
+  onPageScroll(obj){
+    console.log(obj)
+  },
+  //2.页面滚动到最底部的时候调用
+  onReachBottom(){
+     console.log('页面已经达到最底部')
+  },
+  onPullDownRefresh(){
+    console.log('下拉刷新')
   }
 })
