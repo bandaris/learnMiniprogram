@@ -1,0 +1,5 @@
+<input type='number'/>
+<input type='password'/>
+<input value='哈哈哈'/>
+<input placeholder='占位符，占位信息'/>
+<input/>

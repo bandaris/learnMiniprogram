@@ -1,0 +1,21 @@
+<!--pages/text/text.wxml-->
+<text>Hello World</text>
+<text>text是行内标签，不会换行\n</text>
+<!-- 1.使用\n则能够进行换行 -->
+<text>被换行了\n</text>
+
+<!-- 2.text标签中的内容在手机上默认情况下长按是无法选中的 -->
+<!-- 设置selectable为true则长按可以选中 -->
+<text selectable="{{true}}" >bandari:长按选中\n</text>  <!-- 需要使用mustache语法 -->
+<!-- 也可以不设置 直接写上selectable属性即可 推荐这样写-->
+<text selectable>bandari:长按选中\n</text>
+
+<!-- 3.space决定文本空格的大小 -->
+<text selectable>Hellow bandari\n</text>
+<text space='nbsp'>Hellow bandari\n</text> <!-- nbsp根据字体大小设置空格大小 -->
+<text space='ensp'>Hellow bandari\n</text> <!-- ensp半个中文字符的空格大小 -->
+<text space='emsp'>Hellow bandari\n</text> <!-- emsp一个中文字符的空格大小 -->
+
+<!-- 4.decode属性，决定是否解码文本 -->
+<text decode='{{flase}}'>5 &gt; 3\n</text> <!-- 需要使用mustache语法 -->
+<text decode>5 &gt; 3\n</text> <!-- 和selectable一样直接加上属性就生效 -->

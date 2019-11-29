@@ -1,0 +1,15 @@
+<!--pages/image/image.wxml-->
+<text>图片组件</text>
+
+<!-- 
+  1.图片组件可以写成单标签也可以写成双标签
+  2.图片组件有自己的默认大小 320*240
+  3.图片组件是一个行内块元素
+ -->
+
+ <image src='/assets/images/Bandari_Avatar.png'></image> <!-- 直接使用/代表项目根目录 -->
+ <image src='../../assets/images/weixinerweima.jpg'/>
+
+ <!-- 让用户上传图片并展示 -->
+ <button bindtap="handerchooseAlbum">上传新的图片</button>
+  <image src='{{path}}'/>
