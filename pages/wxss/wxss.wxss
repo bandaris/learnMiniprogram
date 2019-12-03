@@ -1,0 +1,20 @@
+/* pages/wxss/wxss.wxss */
+.box{
+  color:yellow;
+  background: blue;
+  font-size:20px;
+}
+.box1{
+  background-color: yellowgreen;
+  width: 200px;
+  height:200px;
+}
+.box2{
+  background-color: rebeccapurple;
+  width:200rpx;
+  height:200rpx;
+}
+
+/* 样式的导入 */
+@import './style/box3.wxss';
+@import './style/weui-searchbar.wxss'

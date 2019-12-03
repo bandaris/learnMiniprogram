@@ -1,0 +1,62 @@
+<!--pages/wxss/wxss.wxml-->
+<text>wxss介绍</text>
+
+<!-- 一.设置样式的三种方式 行内、页面、全局 -->
+
+<!-- 1.行内样式 优先级最高-->
+<view style='color:red;font-size:16px;background:yellow;'>行内样式以键值对的形式 'color:red' 多个样式以分号隔开\n</view>
+
+<!-- 2.页面样式 优先级次之-->
+<view class='box'>页面样式，在wxss文件中使用选择器修改的样式\n</view>
+
+<!-- 3.全局样式 优先级最低-->
+<view class='container'>全局样式，在App.wxss中使用选择器修改的样式\n</view>
+
+<!-- 4.wxss的扩展 rpx 尺寸单位 -->
+<view class='box1'>px单位</view>
+<view class='box2'>rpx单位是px的一半</view>
+
+<!-- 5.样式的导入 -->
+<view class='box3'>样式导入</view>
+
+<!-- weui-wxss导入一个个搜索框 -->
+ <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
