@@ -1,0 +1,3 @@
+<!--pages/btnChangeColor/btnChangeColor.wxml-->
+<button size='mini' bindtap='handleChangeColor'>变色</button>
+<view class='{{isActive? "active":""}}'>可变色？</view>

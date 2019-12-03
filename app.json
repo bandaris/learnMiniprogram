@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/btnChangeColor/btnChangeColor",
     "pages/home/home",
     "pages/about/about"
   ]
