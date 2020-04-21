@@ -1,3 +1,8 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
 <div class='title'>bandari的首页</div>
+<button size='mini' open-type="getUserInfo" bindgetuserinfo="userInfo">获取用户信息</button>
+<view>
+<open-data type='userNickName'></open-data>
+<open-data type='userAvatarUrl'></open-data>
+</view>
